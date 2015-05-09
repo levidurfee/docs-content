@@ -82,7 +82,7 @@ Listing the contents of the default path in an instance with ID ```f00barjwxe37`
 $ swarm exec f00bar ls
 ```
 
-*Note: The use of `ls` requires the `ls` binary be available on the instance. If it fails, try shelling into the instance to debug!*
+*Note: Listing directory contents requires the `ls` binary be available on the instance. If it fails, try shelling into the instance to debug!*
 
 ### Using Parameters with Commands
 Using arguments with a ```command``` requires the use of the option separator `--` to keep the Swarm CLI from parsing the command's arguments for itself.
