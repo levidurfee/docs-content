@@ -19,11 +19,12 @@ How can I provide environment variables for the containers/components? | Use the
 Can I use TLS/HTTPS/SSL? | Not yet, but we're working on it.
 How do I apply changes to the configuration of my application? | Currently, you can't update your application. You will have to delete and re-create the application, which sounds drastic, but actually won't do any harm, as long as you have a stateless application. If you just updated an image, you can use [`swarm update`](http://docs.giantswarm.io/reference/cli/update/) to update the component that uses that image.
 Does the ordering of services and components have an effect? | No, but dependencies do have an effect on startup order. The dependency is always started before the dependent.
-bla | bla
-bla | bla
-bla | bla
-bla | bla
-bla | bla
-bla | bla
+What happens, if I create cyclic dependencies between components? | There will be an error. Currently we don't support those kind of dependencies in our application configuration.
+Why don't you provide a 32 bit version of the swarm CLI? | There is no 32bit version of Docker, and having swarm without Docker on a system didn't appear to be a very common use-case.
+Is there a Windows version of the swarm CLI? | Currently no, but you can use a Vagrant (or similar) VM with a Linux (e.g. ubuntu/trusty64) in it, to run our CLI in.
+Can I use a third party private registry with Giant Swarm? | No, currently you can only use our own [private registry](http://docs.giantswarm.io/reference/registry/) or any public registry like the Docker Hub for example.
+Can I use --volumes-from? | Currently not, but we're working on it.
+How can I prevent automated deletion of my application in Alpha? | Just add a custom domain entry that is not *.gigantic.io to your [application configuration](http://docs.giantswarm.io/reference/swarm-json/#domains).
+How can I run a container periodically? | Currently, this is not possible directly, but there's a workaround: Create a dedicated container/component running a script in an endless loop with a pause between job executions (we can provide example code). If that component is in it's own service, it can be stopped via the CLI or API so it doesn't have to run idle and use resources, and then be started again at the required times using some outside mechanism. As a side note, manual triggering of job execution is possible using [`swarm exec`](http://docs.giantswarm.io/reference/cli/exec/).
 
 Can't find the answer to your question here? Send us an email to [support@giantswarm.io](mailto:support@giantswarm.io) or hop on [Gitter](https://gitter.im/giantswarm/users) and chat with us. Of course [pull requests](https://github.com/giantswarm/docs-content) are also welcome.
