@@ -8,7 +8,7 @@ weight = 40
 
 # Using the registry
 
-## TL;DR
+## Quick Start
 
 Login to the Giant Swarm registry:
 

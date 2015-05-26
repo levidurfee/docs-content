@@ -72,6 +72,8 @@ https://api.giantswarm.io/v1/org/bantic/
 
 No public SDKs exist for the Giant Swarm API at this time, but we plan on adding them to this section when they become available. Please feel free to [comment on Discourse](http://discourse.giantswarm.io/t/sdks-for-the-giant-swarm-api/32) if you are interested in developing an SDK in your favorite language!
 
+There is a simple [example application](https://github.com/giantswarm/swarm-cubism) located on [Giant Swarm's Github account](https://github.com/giantswarm/) which has a small amount of code that accesses the APIs using Python.
+
 ### Response Codes
 
 Giant Swarm's API returns the standard [HTTP status codes](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html). The API also uses a set of internal response codes which are returned with each request:
