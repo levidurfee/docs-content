@@ -64,13 +64,13 @@ $ sudo cp swarm /usr/local/bin/
 
 ## Using an HTTP proxy
 
-The swarm client you install is programmed in [Go](http://golang.org/). That way we can leverage several build in features. For example you can configure a proxy for the connection between the CLI and the swarm cluster by simply setting the HTTP_PROXY env variable.
+The swarm CLI is written in [Go](http://golang.org/), which [supports setting a proxy](http://golang.org/pkg/net/http/#ProxyFromEnvironment) using an enviroment variable called `HTTP_PROXY`. You may configure a proxy for the connection between the CLI and the swarm cluster by setting the `HTTP_PROXY` variable to match your current proxy server's settings:
 
-In Bash this would be:
 ```nohighlight
-export HTTP_PROXY="http://proxyIp:proxyPort"
+export HTTP_PROXY="http://<proxy_ip>:<proxy_port>"
 ```
 
+If you are running a Linux distribution and need to configure the `docker` command to use a proxy, please see the StackOverflow discussion *[Cannot download Docker images behind a proxy](http://stackoverflow.com/questions/23111631/cannot-download-docker-images-behind-a-proxy)*.
 
 ## Next steps
 
