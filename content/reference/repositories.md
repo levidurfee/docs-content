@@ -7,7 +7,7 @@ weight = 40
 +++
 
 # Giant Swarm on Github
-Giant Swarm maintains the following set of reference application repositories [hosted on our Github account](https://github.com/giantswarm/):
+Giant Swarm maintains a set of reference application repositories [hosted on our Github account](https://github.com/giantswarm/):
 
 ## Hello World
 * [giantswarm/helloworld](https://github.com/giantswarm/helloworld) - an example hello world.
