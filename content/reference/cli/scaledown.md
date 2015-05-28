@@ -1,5 +1,5 @@
 +++
-title = "Scaling down a component"
+title = "scale down"
 description = "Reference page for the 'swarm scaledown' command, which allows you to reduce the number of instances running for a particular component."
 date = "2015-01-12"
 type = "page"
@@ -8,7 +8,7 @@ tags = ["swarm scaledown"]
 weight = 91
 +++
 
-# Scaling down a component
+# `swarm scaledown`: Scale Down a Component
 
 The `swarm scaledown` command is used to decrease the number of instances running a service component.
 

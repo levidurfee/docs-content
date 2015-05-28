@@ -8,9 +8,9 @@ tags = ["swarm ls"]
 weight = 80
 +++
 
-# Listing applications
+# `swarm ls`: List Applications
 
-The `swarm ls` helps you to find out which applications are configured in your current environment and what their status is.
+The `swarm ls` shows a list of applications and their status for the current selected enviroment.
 
 ## Command syntax
 

@@ -8,7 +8,7 @@ tags = ["swarm logs"]
 weight = 87
 +++
 
-# Accessing process logs
+# `swarm logs`: View Instance Logs
 
 Logs of processes running on Giant Swarm can be accessed using the `swarm logs` command.
 

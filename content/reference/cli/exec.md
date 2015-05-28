@@ -8,9 +8,9 @@ tags = ["swarm exec"]
 weight = 92
 +++
 
-# Executing a Command in a Component Instance
+# `swarm exec`: Run an Instance Command 
 
-With the `swarm exec` command, you can start the execution of a new process inside a running instance, which includes running scripts or interactive shells. Any command you run must be supported by the underlying container image for the instance.
+With the `swarm exec` command, you can start a new process inside a running instance, which can include running scripts or establishing an interactive shell. Any command you run must be supported by the underlying container image for the instance.
 
 ## Synopsis
 

@@ -1,5 +1,5 @@
 +++
-title = "Scaling up a component"
+title = "swarm scaleup"
 description = "Reference page for the 'swarm scaleup' command, which allows you to increase the number of instances running for a particular component."
 date = "2015-01-12"
 type = "page"
@@ -8,7 +8,7 @@ tags = ["swarm scaleup"]
 weight = 90
 +++
 
-# Scaling up a component
+# `swarm scaleup`: Scale Up a Component
 
 The `swarm scaleup` command is used to increase the number of instances running a service component.
 
@@ -34,4 +34,4 @@ $ swarm scaleup onlineshop/imageserver/nginx 2
 
 ## Further reading
 
- * [Scaling down a component](/reference/cli/scaledown/)
+ * [Scale Down a Component](/reference/cli/scaledown/)
