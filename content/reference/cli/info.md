@@ -12,7 +12,7 @@ weight = 80
 
 The `swarm info` command provides information about a Giant Swarm account, including cluster status, CLI verson, logged in user and the current enviroment.
 
-## Command syntax
+## Command Syntax
 
 The `swarm info` comand is called without any arguments by doing:
 
@@ -32,13 +32,14 @@ Current environment: bant/dev
 
 ### Response Explained
 
-* __Cluster status__: The general platform health, normally `reachable`.
-* __Logged in as user__: The current logged in username. 
-* __Current environment__: The current working environment.
+* `Cluster status` - The general platform health, normally `reachable`.
+* `Swarm CLI version` - The version of the installed command line client.
+* `Logged in as user` - The current logged in username. 
+* `Current environment` - The current working environment.
 
 *Hint: If you are only interested in the current user name, you can use the [`swarm user`](/reference/cli/user/) command. The same is true of the current environment, which can be retrieved using [`swarm env`](/reference/cli/env/).*
 
-## Further reading
+## Further Reading
 
 * [Environments](/reference/cli/env/)
 * [Organizations](/reference/cli/org/)
