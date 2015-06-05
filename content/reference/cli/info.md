@@ -37,7 +37,7 @@ Current environment: bant/dev
 * `Logged in as user` - The current logged in username. 
 * `Current environment` - The current working environment.
 
-*Hint: If you are only interested in the current user name, you can use the [`swarm user`](/reference/cli/user/) command. The same is true of the current environment, which can be retrieved using [`swarm env`](/reference/cli/env/).*
+*Hint: If you are only interested in the current username, you can use the [`swarm user`](/reference/cli/user/) command. The same is true of the current environment, which can be retrieved using [`swarm env`](/reference/cli/env/).*
 
 ## Further Reading
 

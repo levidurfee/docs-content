@@ -8,15 +8,15 @@ tags = ["swarm login"]
 weight = 40
 +++
 
-# `swarm login`: Login with the CLI
+# `swarm login`: Log In with the CLI
 
 The `swarm login` command allows you to authenticate to your Giant Swarm account using the <abbr title="command line interface">CLI</appr>.
 
 The command can be used in interactive mode or credentials can be passed via the command line in non-interactive mode.
 
-## Interactive Login
+## Interactive Login Syntax
 
-You can invoke an interactive login session by doing the following:
+You can invoke an interactive login session by doing:
 
 ```nohighlight
 swarm login
@@ -40,7 +40,7 @@ Environment bant/dev has been selected
 
 *Note: The last line of output informs you which environment has been selected. The default is `<yourusername>/dev` which can be changed using the [`swarm env`](/reference/cli/env/) command.*
 
-## Non-Interactive Login
+## Non-Interactive Login Syntax
 In non-interactive mode, the username and password can be passed to the login command as arguments:
 
 ```nohighlight

@@ -20,7 +20,7 @@ The `swarm create` command can be called without any arguments if a valid `swarm
 swarm create
 ```
 
-Additionally, the command can be called with arguments which specify the JSON-based configuration file:
+Additionally, the command can be called with arguments which specify a JSON-based configuration file:
 
 ```nohighlight
 swarm create <config_file>
@@ -38,7 +38,7 @@ For further information about the app configuration file, please refer to the [s
 <!-- TODO: Explain what this actually does in the background or alternatively link to the architecture overview article which explains this in more detail. -->
 
 ## Using Variables in Options
-Application configuration files like `swarm.json` can utilize variables which act as placeholder keys. The values can be passed to the `swarm create` command using two methods, which may be mixed and matched as needed:
+Application configuration files like `swarm.json` can utilize variables which act as placeholders for values. The values may be passed to the `swarm create` command using two methods, which may be mixed and matched as needed:
 
  * command line options and/or
  * a variable definition file
@@ -50,16 +50,18 @@ Use the `--var=` option to pass variable values on the command line:
 swarm create --var=<key>=<value>
 ```
 
-Here is an example where the `swarm.json` file contains two variables, `$redis_port` and `$domain`, which are populated by using the `--var=` method:
+Here is an example with response where the `swarm.json` file contains two variables, `$redis_port` and `$domain`, which are populated by using the `--var=` method:
 
 ```nohighlight
 $ swarm create --var=redis_port=6397 --var=domain=dev.gigantic.io
+Creating 'helloworld' in the 'bant/dev' environment...
+Application created successfully!
 ```
 
 *Note: Make certain you include the two distinct equal signs in each option when using this feature!*
 
 ### Passing Variables Using a File
-Use the `--var-file=` option to pass a `JSON` formatted file on the command line and a variable named `username`, which is set to `bant`:
+Use the `--var-file=` option to pass a JSON formatted file on the command line and a variable named `username`, which is set to `bant`:
 
 ```
 swarm create --var-file=appvars.json --var=username=bant
@@ -67,14 +69,14 @@ swarm create --var-file=appvars.json --var=username=bant
 
 *Note: The previous example would need to have a `swarm.json` file present in the working directory to function correctly.*
 
-Conversely, if a file named `swarmvars.json` is already present in the *working directory*, you may use the simplified version of the command:
+Conversely, if a file named `swarmvars.json` is already present in the *working directory*, a simplified version of the command may be used:
 
 ```
 swarm create --var=username=bant
 ```
 
 #### JSON Variable File Format
-The `JSON` formated variable file format is comprised of a single JSON object, the top level of which defines keys that are named after your [environments](/reference/cli/env/). This naming scheme allows you to assign different values to variables for each of your environments.
+The `JSON` formatted variable file is comprised of a single JSON object, the top level of which defines keys that are named after your [environments](/reference/cli/env/). This naming scheme allows you to assign different values to variables for each of your environments.
 
 Here is an example called `swarmvars.json`:
 
@@ -91,7 +93,7 @@ Here is an example called `swarmvars.json`:
 }
 ```
 
-Now here's the corresponding `swarm.json` file, with variables:
+Now here's the corresponding `swarm.json` file, utilizing the `$redis_port`, `$domain` and `$username` variables:
 
 ```json
 {
